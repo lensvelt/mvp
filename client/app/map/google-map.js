@@ -1,5 +1,5 @@
 
-//Initialisation function to set up map
+//Initialisation function to set up map // uses JQuery to set up listeners
 function initialize() {
 
    var mapOptions = {                                                                   //Setup the map options
@@ -11,7 +11,7 @@ function initialize() {
   var map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);    //draw the map
   google.maps.event.addListener(map,'click',function(event){console.log(event.latLng);}); //get co-ords of click
   google.maps.event.addListener(map,'click',drawBoundary(map));               //draw boundary
-  google.maps.event.addListener(map,'dblclick',newSighting(map));               //draw boundary
+  // google.maps.event.addListener(map,'dblclick',newSi§ghting(map));               //draw boundary
 }
 
 //-----------------------------------------------------------------------------

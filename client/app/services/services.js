@@ -5,7 +5,13 @@
     .module('sightings-app')
     .factory('dataFactory', dataFactory);
 
-  function dataFactory() {
+  dataFactory.$inject = ['$http'];
+
+  function dataFactory($http) {
+
+
+
+
 
   }
 

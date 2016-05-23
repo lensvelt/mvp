@@ -10,11 +10,9 @@
     <link href='css/styles.css' type="text/css" rel="stylesheet" />
     <!--Client side dependencies-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src='../bower_components/angular/angular.js'></script>
-    <script src='../bower_components/angular-route/angular-route.js'></script>
   </head>
 
-  <body ng-app>
+  <body ng-app='sightings-app'>
     
     <!-- Header -->
     <header class="container-fluid">
@@ -42,14 +40,14 @@
       
       <!-- Load the map here / Angular partial? complex.... -->
       <div class="row">
-        <div class="map-canvas"></div>
+        <div id="map-canvas"></div>
       </div>
       
       <br>
       
       <!-- Sightings partial -->
-      <ng-view></ng-view>
-
+      <div class="row" ng-view></div>
+    
     </div>
     
     <!-- Footer -->
@@ -58,10 +56,14 @@
     </footer>
 
     <!-- Program dependencies -->
+    <script src='../bower_components/angular/angular.js'></script>
+    <script src='../bower_components/angular-route/angular-route.js'></script>
     <script type="text/JavaScript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT5V-qRuEsNge9UDKsun74-Lf330Xlj7I"></script>
-    <script type="text/JavaScript" src="map/google-map.js"></script>
+    <script type="text/JavaScript" src="app/app.js"></script>
+    <script type="text/JavaScript" src="app/map/google-map.js"></script>
+    <script type="text/JavaScript" src="app/sightings/sightings-controller.js"></script>
     <script>
-      window.onload(initialize());
+      initialize();
     </script>
   </body>
 </html>  

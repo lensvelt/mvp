@@ -9,7 +9,7 @@ header, footer {
   text-align:  center;
 }
 
-.map-canvas {
+#map-canvas {
   /*vertical-align: center;*/
   height: 600px;
 }
