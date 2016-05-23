@@ -1,0 +1,31 @@
+{
+  "name": "species-sightings",
+  "version": "1.0.0",
+  "description": "A tool for capturing, visualising and analysing animal species sightings data for safari lodges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lensvelt/2016-04-mvp.git"
+  },
+  "author": "Bret Lensvelt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lensvelt/2016-04-mvp/issues"
+  },
+  "homepage": "https://github.com/lensvelt/2016-04-mvp#readme",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "babel": "^6.5.2",
+    "express": "^4.13.4",
+    "mongodb": "^2.1.19",
+    "mongoose": "^4.4.19",
+    "nodemon": "^1.9.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0"
+  }
+}
