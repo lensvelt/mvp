@@ -1,1 +1,67 @@
-index.html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lodge Sightings</title>
+    <!--Google Font snippet created at www.google.com/fonts-->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+    <!--Bootstrap CDN-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <!--Custom styling overrides for the page-->
+    <link href='css/styles.css' type="text/css" rel="stylesheet" />
+    <!--Client side dependencies-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src='../bower_components/angular/angular.js'></script>
+    <script src='../bower_components/angular-route/angular-route.js'></script>
+  </head>
+
+  <body ng-app>
+    
+    <!-- Header -->
+    <header class="container-fluid">
+      <h1>Lodge Sightings</h1>
+    </header>
+    
+    <!-- Main container -->
+    <div class="container-fluid">
+      <div class="row">
+
+      <!---------------------------------------------------------------------------------------------------------->
+        <form id="select" class="col-sm-4">
+          <select class="select" name="species">
+            <!--TODO: replace programmatical with request to DB on initial load //ng-repeat -->
+            <option value = "select">Please select a species to view</option>
+            <option value = "lion">Lion</option>
+            <option value = "leopard">Leopard</option>
+            <option value = "elephant">African Elephant</option>
+            <option value = "buffalo">Cape Buffalo</option>
+            <option value = "rhino">Black Rhinoceros</option>
+          </select>
+        </form>
+      <!---------------------------------------------------------------------------------------------------------->
+      </div>
+      
+      <!-- Load the map here / Angular partial? complex.... -->
+      <div class="row">
+        <div class="map-canvas"></div>
+      </div>
+      
+      <br>
+      
+      <!-- Sightings partial -->
+      <ng-view></ng-view>
+
+    </div>
+    
+    <!-- Footer -->
+    <footer class="container-fluid">
+      <h1>Footer</h1>
+    </footer>
+
+    <!-- Program dependencies -->
+    <script type="text/JavaScript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT5V-qRuEsNge9UDKsun74-Lf330Xlj7I"></script>
+    <script type="text/JavaScript" src="map/google-map.js"></script>
+    <script>
+      window.onload(initialize());
+    </script>
+  </body>
+</html>  

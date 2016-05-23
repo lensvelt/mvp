@@ -1,0 +1,22 @@
+{
+  "name": "species-sightings",
+  "description": "A tool for capturing, visualising and analysing animal species sightings data for safari lodges",
+  "main": "app.js",
+  "authors": [
+    "Brett Lensvelt"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lensvelt/2016-04-mvp",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-route": "^1.5.5"
+  }
+}
