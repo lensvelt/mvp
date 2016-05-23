@@ -17,28 +17,29 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > Daily Species Sightings Database
 
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  The market is safari lodges who need to keep track of the animal sightings over time in order to identify patterns, study territorial behaviours and identify specific animals.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > A tool for logging daily animal sightings on a map of the property, that will allow the user to view all sightings for a particular time period and ultimately interogate the data visually to identify patterns over time, across species and for specific animals.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > Many lodges manage this data in a manual (pen and paper logbook) way, in conjunction with spreasheets.  Each lodge has their own approach.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > Provides an automated, user friendly central respository for storing and visualising species data in the reserve, allowing lodges to better understand their animal populations and land dynamics. A consistent approach to recording and storing data across properties provides a better starting point for understanding data across different properties and over time.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > I like animals and stuff.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Any lodge can get up and running in minimal time - sign up for an account, specify the boundaries of your property, and start adding data points!
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > The Sightings Database has given us visibility over our game viewing data in a way that was not previously possible, right down to a granular specific animal level, through to species level patterns over time, enabling us to better direct our efforts in providing guests with a world class safari experience.
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
