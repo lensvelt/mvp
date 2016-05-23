@@ -1,8 +1,12 @@
-angular
-  .module('sightings-app')
-  .controller('SightingsController', SightingsController);
+(function() {
+  'use strict'
 
-function SightingsController() {
-  
-}
+  angular
+    .module('sightings-app')
+    .controller('SightingsController', SightingsController);
 
+  function SightingsController() {
+
+  }
+
+})();

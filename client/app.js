@@ -1,2 +1,7 @@
-angular
-  .module('sightings-app', ['ngRoute'])
+(function() {
+  'use strict'
+
+  angular
+    .module('sightings-app', ['ngRoute'])
+
+})();
