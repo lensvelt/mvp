@@ -15,11 +15,11 @@
         templateUrl: 'app/sightings/sightings.html',
         controller: 'SightingsController'
       })
-      // .when('/new', {
-      //   templateUrl: 'sightings/new.html',
-      //   controller: 'SightingsCtrl',
-      //   controllerAs: 'Sightings'
-      // })
+      .when('/new', {
+        templateUrl: 'sightings/new.html',
+        controller: 'SightingsCtrl',
+        controllerAs: 'Sightings'
+      })
       .otherwise({
         redirectTo: '/sightings'
       });

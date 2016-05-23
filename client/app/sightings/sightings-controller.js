@@ -5,19 +5,14 @@
     .module('sightings-app')
     .controller('SightingsController', SightingsController);
 
-  // SightingsController.$inject = ['dataFactory'];
+  SightingsController.$inject = ['$scope'];
 
-  function SightingsController() {
+  function SightingsController($scope) {
     /* jshint validthis: true */
     var vm = this;
 
-    vm.message = "Hello World"
-    vm.sightings = sightings;
-
-
-
-
-    var sightings = [{
+    vm.message = "Hello World Adam!!"
+    vm.sightings = [{
       species: 'lion',
       sex: 'male'
     },

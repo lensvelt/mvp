@@ -1,6 +1,6 @@
-<div class='sighting' ng-controller='SightingsController'>
+<div class='sighting' ng-controller='SightingsController as vm'>
   <div ng-model='sightings'>
-      <div ng-repeat='sighting in sightings'>
+      <div ng-repeat='sighting in vm.sightings'>
         <div class='species'>{{sighting.species}}</div>
         <div class='sex'>{{sighting.sex}}</div>
     <!--     <div class='animal_id'>Solo</div>
