@@ -1,0 +1,8 @@
+angular
+  .module('sightings-app')
+  .controller('SightingsController', SightingsController);
+
+function SightingsController() {
+  
+}
+
