@@ -2,7 +2,11 @@
 
   angular
     .module('sightings-app')
-    .directive('map', function() {
+    .directive('map', map);
+
+    map.$inject = ['$location'];
+
+    function map($location) {
       return {
         restrict: 'E',
         replace: true,
@@ -41,8 +45,8 @@
           //Draw Toulon boundary
           boundary.setMap(map);
 
+          //Use scope.$apply to run non-angular function inside directive (add event listener)
           var marker;
-
           scope
             .$apply(
               google.maps.event.addListener(boundary, 'rightclick', function(e) {
@@ -54,29 +58,13 @@
                     position: e.latLng, 
                     map: map
                   })
+                  $location.path('/new');
                 }
-                // $timeout(function(map) {
-                //   map.zoom = 14;
-                // }, 3000);
-                // addMarker({ lat: e.latLng.lat(), lng: e.latLng.lng() });    
+                
               }));
 
-              // var addMarker = function (pos) {
-              //   var myLatlng = new google.maps.LatLng(pos.lat, pos.lng);
-              //   var marker = new google.maps.Marker({
-              //     position: myLatlng, 
-              //     map: map,
-              //     title:"Hello World!"
-              //   });
-              // }; //end addMarker        
-                 //
-            // );
-
-
-          // ); // end click listener
-              // 
         }
       
     };
-  });
+  };
 })();
