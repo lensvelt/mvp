@@ -15,7 +15,6 @@
     vm.sightings = [];
     vm.addNew = addNew;
 
-
     // [{
     //   species: 'lion',
     //   sex: 'male'

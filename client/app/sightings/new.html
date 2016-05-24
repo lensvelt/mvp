@@ -1,6 +1,6 @@
 <div class='sighting' ng-controller='SightingsController as vm'>
-  <form name='newSighting' ng-submit='addNew()'>
-    <div ng-model='sighting'>
+  <form name='sightingForm' ng-submit='vm.addNew()'>
+    <div>
       <input type ='text' ng-model='vm.sighting.species' class='species' placeholder='species'>
       <input type ='text' ng-model='vm.sighting.sex' class='sex' placeholder='sex'>
       <input type ='text' ng-model='vm.sighting.animal_id' class='animal_id' placeholder='animal_id'>

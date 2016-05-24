@@ -38,9 +38,11 @@
         });
     }
 
-    function addSighting() {
+    function addSighting(data) {
+      console.log('services.js', data)
       return $http.post('/api/sightings', data)
         .then(function(resp) {
+          console.log(resp);
           return resp;
         })
         .catch(function(err) {

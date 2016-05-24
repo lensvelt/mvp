@@ -15,33 +15,10 @@ app.use(express.static('bower_components'));
 
 //Define API routes & actions
 app.get('/api/sightings', handler.getAll);// {
-
-// var data = [{
-//   species: 'lion',
-//   sex: 'male'
-// },
-// {
-//   species: 'leopard',
-//   sex: 'female'
-// },
-// {
-//   species: 'elephant',
-//   sex: 'male'
-// }];
-
-
-//   sightings.getAll(function(err, data) {
-//     if (err) {
-//       console.error(err);
-//     } else {
-//     // Send 200 OK response and data
-//     console.log('from datasbase: ', data);
-//     res.status(200).send(data);
-//     }
-//   });
-// });
-
-app.post('/api/sightings', handler.addOne);
+app.post('/api/sightings', function (req, res) {
+  console.log('called');
+  handler.addOne(req,res);
+});
 //   function(req, res) {
 //   console.log('post request', req.body);
 //   console.log('post response', res);

@@ -13,9 +13,9 @@ exports.getAll = function(req, res) {
 };  
 
 exports.addOne = function(req, res) {
-  console.log(req.data);
- Sighting.create(data, function(error, sighting) {
-  console.log(data);
+ console.log(req.body);
+ Sighting.create(req.body, function(error, sighting) {
+  // console.log(data);
   // console.log(sighting);
     if (error) { //send server error
       res.status(500).send(error);
