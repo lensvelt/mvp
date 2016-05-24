@@ -8,7 +8,7 @@
   dataFactory.$inject = ['$http'];
 
   function dataFactory($http) {
-
+    //Revealing module pattern
     var serviceInstance = {
       initialize: initialize,
       getSightings: getSightings,
@@ -16,7 +16,8 @@
     };
 
     return serviceInstance;
-
+    
+    //First time load, get all data
     function initialize() {
       return $http.get('/api/sightings')
         .then(function(resp) {
