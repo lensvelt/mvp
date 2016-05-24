@@ -9,6 +9,8 @@ var app = express();
 app.use(morgan('dev')); //log server requests
 app.use(bodyParser.json()); //parse requests into JSON
 
+app.use(express.static('client'));
+
 //Define API routes & actions
 app.get('/api/sightings', function(req, res) {
   var data = [{
