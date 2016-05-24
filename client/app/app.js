@@ -16,9 +16,8 @@
         controller: 'SightingsController'
       })
       .when('/new', {
-        templateUrl: 'sightings/new.html',
-        controller: 'SightingsCtrl',
-        controllerAs: 'Sightings'
+        templateUrl: 'app/sightings/new.html',
+        controller: 'SightingsController'
       })
       .otherwise({
         redirectTo: '/sightings'

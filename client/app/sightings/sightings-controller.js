@@ -10,9 +10,11 @@
   function SightingsController($scope, dataFactory) {
     /* jshint validthis: true */
     var vm = this;
-
+    vm.sighting = {};
     vm.message = "Hello World Adam!!"
-    vm.sightings = fetch;
+    vm.sightings = [];
+    vm.addNew = addNew;
+
 
     // [{
     //   species: 'lion',
@@ -34,6 +36,13 @@
         .then(function(data) {
           console.log(data);
           vm.sightings = data;
+        });
+    }
+
+    function addNew() {
+      dataFactory.addSighting(vm.sighting)
+        .then(function(data) {
+          console.log(data);
         });
     }
   }
