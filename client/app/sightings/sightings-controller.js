@@ -5,9 +5,9 @@
     .module('sightings-app')
     .controller('SightingsController', SightingsController);
 
-  SightingsController.$inject = ['$scope'];
+  // SightingsController.$inject = ['dataFactory'];
 
-  function SightingsController($scope) {
+  function SightingsController() {
     /* jshint validthis: true */
     var vm = this;
 
