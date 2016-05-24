@@ -25,11 +25,11 @@
       });
   }
 
-  // appRun.$inject();
+  // appRun.$inject = [];
 
-  function appRun () {
+  // function appRun () {
 
-  }
+  // }
 
 
 })();

@@ -20,7 +20,7 @@
     function initialize() {
       return $http.get('/api/sightings')
         .then(function(resp) {
-          return resp;
+          return resp.data;
         })
         .catch(function(err) {
           console.error(err);
@@ -30,7 +30,7 @@
     function getSightings() {
       return $http.get('/api/sightings')
         .then(function(resp) {
-          return resp;
+          return resp.data;
         })
         .catch(function(err) {
           console.error(err);
@@ -49,4 +49,4 @@
 
   }
 
-})();
+})(); 
