@@ -13,6 +13,10 @@ header, footer {
   /*vertical-align: center;*/
   height: 600px;
 }
+#map_canvas {
+  /*vertical-align: center;*/
+  height: 600px;
+}
 
 .col-sm-4 {
   text-align:  center;
@@ -21,4 +25,13 @@ header, footer {
 .select{
   text-align: left;
   /*vertical-align: center;*/
-  }
+}
+
+.sighting{
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.attrib {
+  display: inline-block;
+}

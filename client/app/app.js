@@ -4,7 +4,7 @@
   angular
     .module('sightings-app', [
       'ngRoute'])
-    .config(configure);
+    .config(configure)
     // .run(appRun);
 
   configure.$inject = ['$routeProvider'];
@@ -24,11 +24,10 @@
       });
   }
 
-  // appRun.$inject = [];
+  // appRun.$inject = ['MapController'];
 
-  // function appRun () {
-
+  // function appRun (MapController) {
+  //   MapController.initialize();
   // }
-
 
 })();
