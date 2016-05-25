@@ -7,11 +7,12 @@
     map.$inject = ['$location'];
 
     function map($location) {
-      return {
-        restrict: 'E',
-        replace: true,
-        template: '<div></div>',
-        link: function(scope, element, attrs) {
+
+      // var controller = ['$scope', function($scope) {
+      //     $scope.location;
+      // }],/
+
+      var link = function(scope, element, attrs) {
           console.log(element);
           
           var myOptions = {
@@ -59,11 +60,22 @@
                     map: map
                   })
                   $location.path('/new');
+                  console.log($location);
                 }
                 
               }));
 
-        }
+        };
+
+      return {
+        restrict: 'E',
+        replace: true,
+        template: '<div></div>',
+        // scope: {
+
+        // },
+        // controller: controller,
+        link: link
       
     };
   };

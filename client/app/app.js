@@ -23,7 +23,7 @@
         redirectTo: '/sightings'
       });
   }
-
+  
   // appRun.$inject = ['MapController'];
 
   // function appRun (MapController) {

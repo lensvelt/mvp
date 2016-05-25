@@ -1,13 +1,13 @@
 <div class='sightings' ng-controller='SightingsController as vm'>
   <div ng-model='sightings'>
-      <div class 'sighting' ng-repeat='sighting in vm.sightings'>
+  <h2>All Sightings</h2>
+    <button ng-click="vm.changeView()">Add New</button>
+      <div ng-dblclick='vm.remove()' class='sighting' ng-repeat='sighting in vm.sightings'>
         <div class='attrib'>{{sighting.species}}</div>
         <div class='attrib'>{{sighting.sex}}</div>
-    <!--     <div class='animal_id'>Solo</div>
-        <div class='number'></div>
-        <div class='location'></div>
-        <div class='date'></div>
-        <div class='comments'></div> -->
+        <div class='attrib'>{{sighting.animal_id}}</div>
+        <div class='attrib'>{{sighting.location}}</div>
+        <div class='attrib'>{{sighting.date}}</div>
       </div>
   </div>
 </div>

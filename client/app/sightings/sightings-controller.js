@@ -14,7 +14,8 @@
     vm.message = "Hello World Adam!!"
     vm.sightings = [];
     vm.addNew = addNew;
-    
+    vm.remove = remove;
+    vm.changeView = changeView;
     fetch();
     
     function fetch() {
@@ -29,9 +30,15 @@
       dataFactory.addSighting(vm.sighting)
         .then(function(data) {
           $location.path('/sightings');
-          console.log($location);
-          console.log(data);
         });
+    }
+
+    function remove() {
+      window.alert('Remove this item?');
+    }
+
+    function changeView() {
+      $location.path('/new');
     }
   }
   
